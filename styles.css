@@ -11,7 +11,7 @@
     grid-template-columns: 1fr 5fr;
     background-color: lightgray;
 }
-.sidebar {
+.sidebar-container {
     background-color: #1c8deb;
     display: grid;
     grid-template-columns: 1fr;
@@ -43,4 +43,46 @@
     width: auto;
     place-self: center;
 }
-
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+}
+.content-header {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+#header-top {
+    display: grid;
+    grid-template-columns: 50px 3fr 75px 100px 1fr;
+    column-gap: 1em;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+#search-icon {
+    height: 40px;
+    width: auto;
+}
+#search-bar {
+    width: 100%;
+    height: 50%;
+    
+    background-color: rgb(189, 187, 187);
+    border-radius: 50em;
+}
+#notifications {
+    height: 40px;
+    width: auto;
+}
+#profile-thumbnail {
+    height: 100px;
+    width: auto;
+    background-color: yellow;
+    border-radius: 50em;
+}
+#username {
+    font-size: 36px;
+    font-weight: bolder;
+}
