@@ -8,30 +8,39 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     background-color: lightgray;
 }
 .sidebar {
-    background-color: #2daae1;
+    background-color: #1c8deb;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
-    justify-items: center;
-}
-
-.sidebar-item {
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-    font-weight: bold;
     font-size: 24px;
-    height: 50%;
+    font-weight: bolder;
+    grid-template-rows: 100px 1fr 1fr;
+    padding-top: 100px;
+    
 }
-.sidebar-item:first-child {
+.sidebar-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 100px;
+    align-items: center;
+}
+#first-link {
     font-size: 36px;
+   
 }
-.sidebar-icon {
+#dashboard-logo {
     height: 75px;
     width: auto;
+    
 }
+.sidebar-logo {
+    height: 50px;
+    width: auto;
+    place-self: center;
+}
+
