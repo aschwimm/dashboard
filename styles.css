@@ -55,11 +55,20 @@
 }
 #header-top {
     display: grid;
-    grid-template-columns: 50px 3fr 75px 100px 1fr;
     column-gap: 1em;
     align-items: center;
     padding-left: 100px;
     padding-top: 50px;
+    grid-template-columns: 50px 3fr 75px 100px 1fr;
+    grid-template-rows: 1fr;
+}
+
+#header-bottom {
+    display: grid;
+    align-items: center;
+    padding-left: 100px;
+    grid-template-columns: 125px 3fr .65fr .65fr .65fr;
+    grid-template-rows: 200px;
 }
 #search-icon {
     height: 40px;
@@ -76,7 +85,7 @@
     height: 40px;
     width: auto;
 }
-#profile-thumbnail {
+.profile-thumbnail {
     height: 100px;
     width: auto;
     background-color: yellow;
@@ -85,4 +94,25 @@
 #username {
     font-size: 36px;
     font-weight: bolder;
+}
+#new,
+#upload,
+#share {
+    height: 2em;
+    width: 6em;
+    background-color: #1c8deb;
+    color: white;
+    font-size: 2em;
+    border-radius: 50em;
+    border: 0;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+#greeting {
+    font-size: 24px;
+    font-weight: bolder;
+}
+span {
+    font-size: 46px;
 }
